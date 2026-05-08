@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile Card</title>
+
+  <style>
+
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body{
+      height: 100vh;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      background-color: #e5e5e5;
+
+      font-family: Arial, sans-serif;
+    }
+
+    .card{
+
+      width: 370px;
+
+      background-color: white;
+
+      border-radius: 15px;
+
+      overflow: hidden;
+
+      box-shadow: 0px 4px 12px rgba(0,0,0,0.2);
+
+      text-align: center;
+    }
+
+    .cover img{
+
+      width: 100%;
+      height: 180px;
+
+      object-fit: cover;
+    }
+
+    .profile-img{
+
+      margin-top: -60px;
+    }
+
+    .profile-img img{
+
+      width: 120px;
+      height: 120px;
+
+      border-radius: 50%;
+
+      border: 5px solid white;
+
+      object-fit: cover;
+    }
+
+    .content{
+
+      padding: 20px;
+    }
+
+    .content h2{
+
+      color: #4b5b6b;
+
+      margin-bottom: 10px;
+    }
+
+    .content p{
+
+      color: gray;
+
+      line-height: 1.6;
+
+      margin-bottom: 20px;
+    }
+
+    .info{
+
+      display: flex;
+
+      justify-content: center;
+
+      gap: 30px;
+
+      margin-bottom: 25px;
+
+      color: #5b6775;
+    }
+
+    .stats{
+
+      display: flex;
+
+      border-top: 1px solid #ddd;
+
+      border-bottom: 1px solid #ddd;
+    }
+
+    .stats div{
+
+      flex: 1;
+
+      padding: 18px;
+    }
+
+    .stats div:first-child{
+
+      border-right: 1px solid #ddd;
+    }
+
+    .stats h3{
+
+      color: #4b5b6b;
+    }
+
+    .stats p{
+
+      color: gray;
+
+      margin-top: 5px;
+    }
+
+    .follow-btn{
+
+      background-color: #63c27b;
+
+      padding: 18px;
+
+      color: white;
+
+      font-size: 20px;
+
+      font-weight: bold;
+
+      cursor: pointer;
+    }
+
+    .follow-btn:hover{
+
+      background-color: #4caf68;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <div class="card">
+
+    <div class="cover">
+      <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb" alt="cover">
+    </div>
+
+    <div class="profile-img">
+      <img src="/Tech/Images/saravanan.png" alt="profile">
+    </div>
+
+    <div class="content">
+
+      <h2>Saravanan</h2>
+
+      <p>
+        Saravanan, from a family of silk weavers in Paramakudi, began as a security guard and now works with the Zoho Schools admin team with pride and dedication.
+      </p>
+
+      <div class="info">
+        <span>📍 Chennai</span>
+        <span>✉ saravanan@gmail.com</span>
+      </div>
+
+    </div>
+
+    <div class="stats">
+
+      <div>
+        <h3>8,100</h3>
+        <p>Followers</p>
+      </div>
+
+      <div>
+        <h3>3,650</h3>
+        <p>Following</p>
+      </div>
+
+    </div>
+
+    <div class="follow-btn">
+      Follow
+    </div>
+
+  </div>
+
+</body>
+</html>
