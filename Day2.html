@@ -1,1 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<title>Responsive Profile Cards</title>
+
+<style>
+
+body{
+    margin:0;
+    padding:20px;
+    font-family:Arial;
+    background:#8d88c7;
+}
+
+/* TITLE SECTION */
+
+.heading{
+
+    text-align:center;
+
+    color:white;
+
+    margin-bottom:30px;
+}
+
+.heading h1{
+
+    margin-bottom:10px;
+
+    font-size:40px;
+}
+
+.heading p{
+
+    font-size:16px;
+
+    color:#f1f1f1;
+}
+
+/* FLEX CONTAINER */
+
+.container{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+    gap:20px;
+}
+
+/* CARD */
+
+.card{
+
+    width:220px;
+
+    background:white;
+
+    border-radius:10px;
+
+    overflow:hidden;
+
+    text-align:center;
+
+    box-shadow:0px 4px 10px rgba(0,0,0,0.2);
+}
+
+/* TOP COLOR */
+
+.top{
+    height:80px;
+}
+
+/* IMAGE */
+
+.card img{
+
+    width:80px;
+    height:80px;
+
+    border-radius:50%;
+
+    margin-top:-40px;
+
+    border:4px solid white;
+}
+
+/* TEXT */
+
+.card h3{
+    margin:10px 0 5px;
+}
+
+.card p{
+    color:gray;
+    font-size:14px;
+    padding:0 15px;
+}
+
+/* BOTTOM SECTION */
+
+.bottom{
+
+    margin-top:20px;
+
+    padding:15px;
+
+    background:#f3f3f3;
+}
+
+/* LINKS */
+
+.bottom a{
+
+    display:block;
+
+    margin:8px 0;
+
+    text-decoration:none;
+
+    color:blue;
+
+    font-size:14px;
+}
+
+.bottom a:hover{
+    color:red;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+    .card{
+        width:45%;
+    }
+
+}
+
+@media(max-width:480px){
+
+    .card{
+        width:100%;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HEADING -->
+
+<div class="heading">
+
+    <h1>Meet Our Team</h1>
+
+    <p>
+        Our creative and talented team members work together to build amazing digital experiences.
+    </p>
+
+</div>
+
+<!-- CARDS -->
+
+<div class="container">
+
+    <!-- CARD 1 -->
+
+    <div class="card">
+
+        <div class="top" style="background:#6ee7c8;"></div>
+
+        <img src="https://i.pravatar.cc/100?img=1">
+
+        <h3>Arun</h3>
+
+        <p>Frontend Developer</p>
+
+        <div class="bottom">
+
+            <a href="https://instagram.com/arun_official" target="_blank">
+                Instagram : @arun_official
+            </a>
+
+            <a href="mailto:arun@gmail.com">
+                Gmail : arun@gmail.com
+            </a>
+
+        </div>
+
+    </div>
+
+    <!-- CARD 2 -->
+
+    <div class="card">
+
+        <div class="top" style="background:#9ab6ff;"></div>
+
+        <img src="https://i.pravatar.cc/100?img=2">
+
+        <h3>Kumar</h3>
+
+        <p>UI Designer</p>
+
+        <div class="bottom">
+
+            <a href="https://instagram.com/kumar_design" target="_blank">
+                Instagram : @kumar_design
+            </a>
+
+            <a href="mailto:kumar@gmail.com">
+                Gmail : kumar@gmail.com
+            </a>
+
+        </div>
+
+    </div>
+
+    <!-- CARD 3 -->
+
+    <div class="card">
+
+        <div class="top" style="background:#ffb6d9;"></div>
+
+        <img src="https://i.pravatar.cc/100?img=3">
+
+        <h3>Priya</h3>
+
+        <p>Graphic Designer</p>
+
+        <div class="bottom">
+
+            <a href="https://instagram.com/priya_art" target="_blank">
+                Instagram : @priya_art
+            </a>
+
+            <a href="mailto:priya@gmail.com">
+                Gmail : priya@gmail.com
+            </a>
+
+        </div>
+
+    </div>
+
+    <!-- CARD 4 -->
+
+    <div class="card">
+
+        <div class="top" style="background:#ffd38f;"></div>
+
+        <img src="https://i.pravatar.cc/100?img=4">
+
+        <h3>Divya</h3>
+
+        <p>UX Researcher</p>
+
+        <div class="bottom">
+
+            <a href="https://instagram.com/divya_ux" target="_blank">
+                Instagram : @divya_ux
+            </a>
+
+            <a href="mailto:divya@gmail.com">
+                Gmail : divya@gmail.com
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
