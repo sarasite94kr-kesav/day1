@@ -1,1 +1,286 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+body {
+  font-family: Arial, sans-serif;
+  background: #f1f5f9;
+  color: #1e293b;
+  line-height: 1.6;
+}
+
+.site-header {
+  min-height: 100vh;
+  background:
+    linear-gradient(rgba(0,0,0,0.68), rgba(0,0,0,0.68)),
+    url("https://images.unsplash.com/photo-1487887235947-a955ef187fcc");
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 60px;
+}
+
+.navbar h2 {
+  font-size: 34px;
+  color: #38bdf8;
+}
+
+.navbar ul {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar a:hover,
+.navbar a:focus {
+  color: #38bdf8;
+  outline: 2px solid #38bdf8;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.hero {
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 30px;
+}
+
+.hero-content {
+  max-width: 780px;
+}
+
+.hero h1 {
+  font-size: 65px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 22px;
+  margin-bottom: 30px;
+}
+
+.btn {
+  display: inline-block;
+  background: #38bdf8;
+  color: white;
+  padding: 15px 35px;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: bold;
+}
+
+.btn:hover,
+.btn:focus {
+  background: #0284c7;
+  outline: 3px solid white;
+}
+
+.features,
+.gallery,
+.contact {
+  padding: 80px 30px;
+  text-align: center;
+}
+
+.features h2,
+.gallery h2,
+.contact h2,
+.info-box h2 {
+  font-size: 42px;
+  margin-bottom: 10px;
+  color: #0f172a;
+}
+
+.card-container,
+.gallery-box {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.card {
+  width: 310px;
+  background: white;
+  border-radius: 22px;
+  overflow: hidden;
+  box-shadow: 0 8px 22px rgba(0,0,0,0.18);
+  cursor: pointer;
+  transition: 0.3s;
+  border: 4px solid transparent;
+}
+
+.card:hover,
+.card:focus {
+  transform: scale(1.06);
+  border-color: #38bdf8;
+  box-shadow: 0 14px 35px rgba(56,189,248,0.5);
+  outline: none;
+}
+
+.card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.card h3 {
+  color: #0284c7;
+  font-size: 26px;
+  margin: 15px 0 8px;
+}
+
+.card p {
+  padding: 0 20px 25px;
+}
+
+figure {
+  margin: 0;
+}
+
+figcaption {
+  font-size: 14px;
+  color: #475569;
+  padding: 8px;
+  background: #e0f2fe;
+}
+
+.gallery {
+  background: #e0f2fe;
+}
+
+.gallery-box figure {
+  width: 280px;
+  background: white;
+  border-radius: 18px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: 0.3s;
+  border: 4px solid white;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.16);
+}
+
+.gallery-box figure:hover,
+.gallery-box figure:focus {
+  transform: scale(1.08);
+  border-color: #0284c7;
+  outline: none;
+}
+
+.gallery-box img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.info-box {
+  max-width: 900px;
+  margin: 60px auto;
+  background: white;
+  padding: 35px;
+  border-left: 8px solid #38bdf8;
+  border-radius: 15px;
+  box-shadow: 0 8px 22px rgba(0,0,0,0.15);
+}
+
+.contact {
+  background: #0f172a;
+  color: white;
+}
+
+.contact h2 {
+  color: white;
+}
+
+form {
+  max-width: 500px;
+  margin: 40px auto 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+label {
+  text-align: left;
+  font-weight: bold;
+}
+
+input,
+textarea {
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+input:focus,
+textarea:focus {
+  outline: 3px solid #38bdf8;
+}
+
+button {
+  background: #38bdf8;
+  color: white;
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover,
+button:focus {
+  background: #0284c7;
+  outline: 3px solid white;
+}
+
+footer {
+  background: black;
+  color: white;
+  text-align: center;
+  padding: 25px;
+}
+
+footer a {
+  color: #38bdf8;
+}
+
+@media(max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 18px;
+    padding: 25px;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: 42px;
+  }
+
+  .hero p {
+    font-size: 18px;
+  }
+}
