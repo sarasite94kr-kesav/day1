@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bus Passenger Counter</title>
+  <link rel="stylesheet" href="4.Day.css" />
+</head>
+<body>
+
+  <div class="card">
+    <h1>🚌 Bus Passenger Counter</h1>
+
+    <!-- Bus capacity input -->
+    <div class="capacity-row">
+      <label for="capacity-input">Bus Seat Capacity:</label>
+      <input
+        type="number"
+        id="capacity-input"
+        min="1"
+        max="200"
+        value="40"
+        onchange="updateCapacity(this.value)"
+      />
+    </div>
+
+    <!-- Status banner -->
+    <div id="status-banner" class="status-banner hidden">🚫 Bus Full!</div>
+
+    <!-- Live count display -->
+    <div id="count-display" class="count-display">0</div>
+
+    <!-- Remaining seats line -->
+    <p id="seats-left" class="seats-info">Seats remaining: 40</p>
+
+    <!-- Action buttons -->
+    <div class="controls">
+      <button id="btn-board"  onclick="board()">+ Board</button>
+      <button id="btn-alight" onclick="alight()">− Alight</button>
+      <button id="btn-save"   onclick="saveTrip()">Save Trip</button>
+      <button id="btn-reset"  onclick="reset()">Reset</button>
+    </div>
+
+    <!-- Scrollable trip history log -->
+    <div class="log-box">
+      <p class="log-title">Trip History</p>
+      <div id="log" class="log"></div>
+    </div>
+  </div>
+
+  <script src="4.Day.js"></script>
+</body>
+</html>
