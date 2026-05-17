@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SK Corner Kitchen</title>
+  <link rel="stylesheet" href="5.Day.css" />
+</head>
+<body>
+
+  <div class="board">
+
+    <div class="header">
+      <h1>SK Corner Kitchen</h1>
+      <p id="today-date"></p>
+    </div>
+
+    <!-- Meal selector -->
+    <div class="meal-tabs">
+      <button class="tab" data-meal="breakfast">Breakfast</button>
+      <button class="tab" data-meal="lunch">Lunch</button>
+      <button class="tab" data-meal="dinner">Dinner</button>
+    </div>
+
+    <!-- Current meal heading -->
+    <h2 class="meal-title" id="meal-title"></h2>
+
+    <!-- Items list -->
+    <ul id="item-list"></ul>
+    <p  id="empty-msg" class="empty">No items added yet.</p>
+
+    <!-- Add item form -->
+    <div class="add-form">
+      <input id="inp-name"  type="text"   placeholder="Dish name" />
+      <input id="inp-price" type="number" placeholder="Price ₹" min="0" />
+      <button id="add-btn">Add</button>
+      <button id="clear-btn">Clear All</button>
+    </div>
+
+  </div>
+
+  <script src="5.Day.js"></script>
+</body>
+</html>
