@@ -89,15 +89,17 @@ li:hover { background: rgba(255,255,255,0.1); }
 .li-price { font-family: monospace; font-size: 1rem; color: #a8e6cf; }
 
 .li-del {
-  padding: 0.3rem 0.75rem;
+  width: 32px;
+  height: 32px;
   border: 1px solid rgba(255,80,80,0.4);
   border-radius: 6px;
   background: transparent;
   color: #ff8080;
-  font-size: 0.82rem;
+  font-size: 1rem;
   cursor: pointer;
+  flex-shrink: 0;
 }
-.li-del:hover { background: rgba(220,50,50,0.5); color: #fff; }
+.li-del:hover { background: rgba(220,50,50,0.5); }
 
 .empty {
   color: rgba(245,230,200,0.3);
