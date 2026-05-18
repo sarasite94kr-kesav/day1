@@ -102,7 +102,7 @@ function render() {
       <li>
         <span class="li-name">${esc(item.name)}</span>
         <span class="li-price">₹${item.price.toFixed(2)}</span>
-        <button class="li-del" onclick="deleteItem(${i})">Delete</button>
+        <button class="li-del" onclick="deleteItem(${i})">🗑</button>
       </li>`;
   }).join('');
 }
